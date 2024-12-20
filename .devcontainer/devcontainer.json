@@ -1,0 +1,23 @@
+{
+    "name": "Laravel Development Environment",
+    "image": "php:8.2",
+    "forwardPorts": [
+      8000
+    ],
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "php.validate.executablePath": "/usr/local/bin/php",
+          "php.suggest.basic": false
+        },
+        "extensions": [
+          "bmewburn.vscode-intelephense-client",
+          "onecentlin.laravel-blade",
+          "junstyle.php-snippets",
+          "xdebug.php-debug",
+          "felixfbecker.php-intellisense"
+        ]
+      }
+    },
+    "postCreateCommand": "composer install"
+  }
